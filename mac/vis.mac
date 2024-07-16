@@ -1,0 +1,17 @@
+/vis/open OGL
+/vis/drawVolume
+
+/vis/modeling/trajectories/create/drawByParticleID 
+/vis/modeling/trajectories/drawByParticleID-0/set e- red
+/vis/modeling/trajectories/drawByParticleID-0/set e+ blue
+/vis/modeling/trajectories/drawByParticleID-0/set mu+ green
+/vis/modeling/trajectories/drawByParticleID-0/set mu- yellow
+/vis/modeling/trajectories/drawByParticleID-0/set gamma cyan
+
+/vis/filtering/trajectories/create/particleFilter
+/vis/filtering/trajectories/particleFilter-0/add gamma
+/vis/filtering/trajectories/particleFilter-0/invert true
+
+/vis/viewer/set/autoRefresh true
+/vis/scene/add/trajectories smooth
+/vis/scene/endOfEventAction accumulate
