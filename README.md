@@ -56,3 +56,5 @@ To personalize user's own experiment preference, modifications can be made in `s
 
 # Other files
 In the main project folder, GammaEneHistGenerator.py is a Python script to generate RMC spectrum histograms and the file gammaSpectrum.mac used by other macro files.
+
+Notes folder contains some useful notes of Geant4 or experiment specfic references for beginners, which can be used if interested in.
